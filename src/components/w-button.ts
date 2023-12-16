@@ -10,7 +10,7 @@ class WButton extends LitElement {
 
   // Set background color of the button
   @property({ attribute: "bg-color" })
-  bgColor: string = "#405058" /* "#505050" */;
+  bgColor: string = "hotpink" /* "#405069" */ /* "#505050" */;
 
   // Set text color of the button
   @property()
