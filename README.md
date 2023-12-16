@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/godwinmanu/winify">
-    <img src="./public/winify-no-bg.png" alt="Winify logo"/>
+    <img src="https://github.com/godwinmanu/winify/blob/main/public/winify-no-bg.png" alt="Winify logo"/>
   </a>
 </p>
 
@@ -41,7 +41,7 @@ older versions head over here
 
 - 🔩 **Easily Customizable**
 - 🖱 **Flexible & Reusable** - _Winify components are built on top of Lit to allow interoperability_
-- 🕊 **Lightweight** - _less than 5kb including styles_
+- 🕊 **Lightweight** <!-- - _less than 10kb including styles_ -->
 - 😍 **Framework-agnostic** - _Web components are designed to be framework agnostic, meaning they can be used with any framework or library, or on their own, without requiring additional dependencies_
 
 ## Installation

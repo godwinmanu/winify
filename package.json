@@ -1,7 +1,16 @@
 {
   "name": "winify",
+  "description": "Smoking hot React Notifications. Lightweight, customizable and beautiful by default.",
+  "author": "Emmanuel Godwin HOUENOU",
+  "repository": "godwinmanu/winify",
+  "keywords": [
+    "ui library",
+    "web components",
+    "framework-agnostic",
+    "reusable"
+  ],
   "private": false,
-  "version": "0.0.8",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
