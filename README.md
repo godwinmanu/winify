@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">Build modern applications with reusable components based on web components 🚀</h1>
+<h1 align="center">Build modern applications with reusable components, independent of frameworks 🚀</h1>
 <br />
 
 <div align="center">
