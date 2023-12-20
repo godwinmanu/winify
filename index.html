@@ -9,17 +9,67 @@
   </head>
   <body>
     <style>
-      div {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      w-button::part(button) {
       }
     </style>
     <div>
-      <w-button loading>Button</w-button>
-      <w-button variant="outline" bg-color="#505050">Button</w-button>
+      <p>Small</p>
+      <w-button size="small">Contain</w-button>
+      <w-button size="small" variant="outline">Outline</w-button>
+      <w-button size="small" variant="ghost">Ghost</w-button>
+      <w-button size="small" variant="link" href="https://google.com"
+        >Link</w-button
+      >
+      <w-button size="small" disabled="disabled">Contain disabled</w-button>
+      <w-button size="small" disabled="disabled" variant="outline"
+        >Outline disabled</w-button
+      >
+      <w-button size="small" disabled="disabled" variant="ghost"
+        >Ghost disabled</w-button
+      >
+      <w-button size="small" disabled="disabled" variant="link"
+        >Link disabled</w-button
+      >
     </div>
-    <!-- <button>Button 1</button>
-    <button class="button2">Button 2</button> -->
+    <div>
+      <p>Medium</p>
+      <w-button>Contain</w-button>
+      <w-button variant="outline">Outline</w-button>
+      <w-button variant="ghost">Ghost</w-button>
+      <w-button variant="link" href="https://google.com">Link</w-button>
+      <w-button size="medium" disabled="disabled">Contain disabled</w-button>
+      <w-button size="medium" disabled="disabled" variant="outline"
+        >Outline disabled</w-button
+      >
+      <w-button size="medium" disabled="disabled" variant="ghost"
+        >Ghost disabled</w-button
+      >
+      <w-button size="medium" disabled="disabled" variant="link"
+        >Link disabled</w-button
+      >
+    </div>
+    <div>
+      <p>Large</p>
+      <w-button size="large">Contain</w-button>
+      <w-button size="large" variant="outline">Outline</w-button>
+      <w-button size="large" variant="ghost">Ghost</w-button>
+      <w-button size="large" variant="link" href="https://google.com"
+        >Link</w-button
+      >
+      <w-button size="large" disabled="disabled">Contain disabled</w-button>
+      <w-button size="large" disabled="disabled" variant="outline"
+        >Outline disabled</w-button
+      >
+      <w-button size="large" disabled="disabled" variant="ghost"
+        >Ghost disabled</w-button
+      >
+      <w-button size="large" disabled="disabled" variant="link"
+        >Link disabled</w-button
+      >
+    </div>
   </body>
 </html>

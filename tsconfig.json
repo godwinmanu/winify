@@ -16,5 +16,5 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false
   },
-  "include": ["src"]
+  "include": ["src", "typings"]
 }

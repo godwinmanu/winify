@@ -10,7 +10,7 @@
     "reusable"
   ],
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.7",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
@@ -33,6 +33,7 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "sass": "^1.69.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
