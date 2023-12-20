@@ -21,20 +21,26 @@ class WButton extends LitElement {
   size: "small" | "medium" | "large" = "medium";
 
   /**
-   * Set the link URL
+   * Set URL of the page the link goes to
    */
   @property()
   href: string = "";
 
-  // When set to true, disabled the button
+  /**
+   * Boolean. When set to true, disable the button and make it not not mutable, focusable
+   */
   @property({ type: Boolean })
   disabled: boolean = false;
 
-  // Useful to indicate an asynchronous action execution, a request, ...
+  /**
+   * Boolean. Useful to indicate an asynchronous action execution, a request, ...
+   */
   @property({ type: Boolean })
   loading: boolean = false;
 
-  // Set an icon as the button ornament
+  /**
+   * Set an icon as the button ornament
+   */
   @property()
   icon?: string = "";
 

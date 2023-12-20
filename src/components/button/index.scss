@@ -48,12 +48,12 @@ $bgColor: #3a5155;
 
 @mixin noContainDisabledStyle {
   color: rgba($color: $bgColor, $alpha: 0.4);
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @mixin containDisabledStyle {
   background-color: rgba($color: $bgColor, $alpha: 0.4);
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @mixin sizedStyle($size) {
