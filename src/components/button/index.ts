@@ -42,11 +42,15 @@ class WButton extends LitElement {
   render() {
     return html`<button
       part="button"
-      class=${`w-button ${this.variant}`}
-      ?disabled=${this.disabled}
+      class=${`w-button ${this.variant} ${this.size}`}
+      ?disabled=${this.disabled || this.loading}
     >
-      <span> ${this.loading ? "" : null} </span>
-      ${this.icon}
+      ${this.loading || this.icon
+        ? html`<span class="spinner-icon">
+            ${this.loading ? html`<span class="spinner"></span>` : null}
+            <span class="icon">${this.icon}</span>
+          </span>`
+        : null}
       ${this.variant !== "link"
         ? html`<slot></slot>`
         : html`<a href=${this.href} rel="noreferrer"><slot></slot></a>`}

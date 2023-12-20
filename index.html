@@ -13,6 +13,12 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
+      .w-buttons-set {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
       w-button::part(button) {
       }
     </style>
@@ -70,6 +76,29 @@
       <w-button size="large" disabled="disabled" variant="link"
         >Link disabled</w-button
       >
+    </div>
+    <div>
+      <p>Medium</p>
+      <div class="w-buttons-set">
+        <w-button loading icon="😊">Contain</w-button>
+        <w-button variant="outline" icon="😋">Outline</w-button>
+        <w-button loading variant="ghost" icon="😊">Ghost</w-button>
+        <w-button loading variant="link" href="https://google.com"
+          >Link</w-button
+        >
+        <w-button loading size="medium" disabled="disabled"
+          >Contain disabled</w-button
+        >
+        <w-button size="medium" disabled="disabled" variant="outline"
+          >Outline disabled</w-button
+        >
+        <w-button size="medium" disabled="disabled" variant="ghost"
+          >Ghost disabled</w-button
+        >
+        <w-button size="medium" disabled="disabled" variant="link"
+          >Link disabled</w-button
+        >
+      </div>
     </div>
   </body>
 </html>
