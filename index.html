@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
     <script type="module" src="/src/index.ts"></script>
@@ -14,12 +14,11 @@
       }
 
       .w-buttons-set {
+        width: 100%;
+        flex-wrap: wrap;
         display: flex;
         align-items: center;
-        gap: 5px;
-      }
-
-      w-button::part(button) {
+        gap: 7px;
       }
     </style>
     <div>
@@ -80,7 +79,7 @@
     <div>
       <p>Medium</p>
       <div class="w-buttons-set">
-        <w-button loading icon="😊">Contain</w-button>
+        <w-button loading icon="">Contain</w-button>
         <w-button variant="outline" icon="😋">Outline</w-button>
         <w-button loading variant="ghost" icon="😊">Ghost</w-button>
         <w-button loading variant="link" href="https://google.com"
@@ -98,6 +97,19 @@
         <w-button size="medium" disabled="disabled" variant="link"
           >Link disabled</w-button
         >
+      </div>
+    </div>
+    <div>
+      <p>Some customizations</p>
+      <div class="w-buttons-set">
+        <w-button size="medium" class="dd" icon="/src/assets/icon.svg"
+          >Customized icon button</w-button
+        >
+        <w-button size="medium" loading spinner="/src/assets/spinner.svg"
+          >Customized spinner for loading</w-button
+        >
+        <w-button rounded size="small">Rounded button</w-button>
+        <w-button rounded size="small">+</w-button>
       </div>
     </div>
   </body>

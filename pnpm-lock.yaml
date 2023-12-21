@@ -11,6 +11,9 @@ dependencies:
   '@types/react':
     specifier: ^18.2.34
     version: 18.2.34
+  external-svg-loader:
+    specifier: ^1.6.10
+    version: 1.6.10
   lit:
     specifier: ^2.7.6
     version: 2.8.0
@@ -336,6 +339,12 @@ packages:
       '@esbuild/win32-x64': 0.18.20
     dev: true
 
+  /external-svg-loader@1.6.10:
+    resolution: {integrity: sha512-VxFQKN9jr9hwpwmO4d/IJBe1Cb+fzy9Xm6iQwW+Q0yywze7LcuCXk+SVKHfG9Ej0z2AwnJ/C4UcRdyXnMfGzuQ==}
+    dependencies:
+      idb-keyval: 6.2.1
+    dev: false
+
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -357,6 +366,10 @@ packages:
     dependencies:
       is-glob: 4.0.3
     dev: true
+
+  /idb-keyval@6.2.1:
+    resolution: {integrity: sha512-8Sb3veuYCyrZL+VBt9LJfZjLUPWVvqn8tG28VqYNFCo43KHcKuq+b4EiXGeuaLAQWL2YmyDgMp2aSpH9JHsEQg==}
+    dev: false
 
   /immutable@4.3.4:
     resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}

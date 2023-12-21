@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/godwinmanu/winify">
-    <img src="https://github.com/godwinmanu/winify/raw/main/assets/winify.png" alt="Winify logo"/>
+    <img src="https://github.com/godwinmanu/winify/raw/main/src/assets/winify.png" alt="Winify logo"/>
   </a>
 </p>
 

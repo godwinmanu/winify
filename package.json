@@ -10,7 +10,7 @@
     "reusable"
   ],
   "private": false,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "@lit/react": "^1.0.1",
     "@types/react": "^18.2.34",
+    "external-svg-loader": "^1.6.10",
     "lit": "^2.7.6",
     "react": "^18.2.0"
   },
