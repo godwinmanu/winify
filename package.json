@@ -10,7 +10,7 @@
     "reusable"
   ],
   "private": false,
-  "version": "0.1.8",
+  "version": "0.1.95",
   "type": "module",
   "main": "dist/index.js",
   "exports": {

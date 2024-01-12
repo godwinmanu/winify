@@ -1,0 +1,77 @@
+@import "../../assets/reset.scss";
+
+// Variables declarations
+$bgColor: #3a5155;
+
+// Mixins and functions declarations
+@function computeDimension($size) {
+  @if $size == small {
+    @return 14px;
+  } @else if $size == medium {
+    @return 16px;
+  } @else {
+    @return 20px;
+  }
+}
+
+@mixin disabledStyle {
+  border-color: rgba($color: $bgColor, $alpha: 0.4);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+@mixin sizedStyle($size) {
+  @if $size == small {
+    padding: 0.1rem 0.5rem;
+  } @else if $size == large {
+    padding: 0.3rem 1.3rem;
+  }
+
+  &:hover {
+    border-color: rgba($color: $bgColor, $alpha: 0.8);
+  }
+
+  &:disabled {
+    @include disabledStyle;
+  }
+
+  // @include spinnerAndIconStyle($size, contain);
+}
+
+:host {
+  display: inline-block;
+}
+// End Mixins and functions declarations
+
+// Element styling
+.w-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  font-size: 0.9rem;
+  width: auto;
+  height: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+
+  @include sizedStyle(medium);
+
+  &.small {
+    font-size: 0.8rem;
+    height: 1.5rem;
+
+    @include sizedStyle(small);
+  }
+
+  &.large {
+    font-size: 1rem;
+    height: 2.5rem;
+
+    @include sizedStyle(large);
+  }
+}

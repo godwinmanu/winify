@@ -15,13 +15,17 @@ declare class WButton extends LitElement {
      */
     href: string;
     /**
-     * Boolean. When set to true, disable the button and make it not not mutable, focusable
+     * When set to true, disable the button and make it not not mutable, focusable
      */
     disabled: boolean;
     /**
-     * Boolean. Useful to indicate an asynchronous action execution, a request, ...
+     * Useful to indicate an asynchronous action execution, a request, ...
      */
     loading: boolean;
+    /**
+     * Applies a rounded edge to the button.
+     */
+    rounded: boolean;
     /**
      * Set an icon as the button ornament. Expect a text icon like emoji (😋) or a valid link to an SVG file
      */

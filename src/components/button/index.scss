@@ -1,7 +1,9 @@
 @import "../../assets/reset.scss";
 
+// Variables declarations
 $bgColor: #3a5155;
 
+// Mixins and functions declarations
 @function computeDimension($size) {
   @if $size == small {
     @return 14px;
@@ -71,7 +73,6 @@ $bgColor: #3a5155;
 
   &:hover {
     background-color: rgba($color: $bgColor, $alpha: 0.8);
-    box-shadow: 0px 1px 1px #f1f1f1;
   }
 
   &:disabled {
@@ -152,7 +153,9 @@ $bgColor: #3a5155;
 :host {
   display: inline-block;
 }
+// End Mixins and functions declarations
 
+// Element styling
 .w-button {
   display: flex;
   align-items: center;
